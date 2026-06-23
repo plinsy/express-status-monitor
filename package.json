@@ -17,6 +17,11 @@
   "author": "Rafal Wilinski <raf.wilinski@gmail.com> (https://dynobase.com)",
   "contributors": [
     {
+      "name": "AN TSIMANARSON Princy",
+      "email": "plinsy2@gmail.com",
+      "url": "https://github.com/plinsy/"
+    },
+    {
       "name": "Julien Breux",
       "email": "julien.breux@gmail.com",
       "url": "https://github.com/JulienBreux/"
@@ -63,12 +68,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "axios": "0.26.0",
-    "debug": "4.1.1",
-    "handlebars": "^4.7.7",
-    "on-headers": "1.0.2",
-    "pidusage": "2.0.18",
-    "socket.io": "^4.4.1"
+    "axios": "1.18.1",
+    "debug": "4.4.3",
+    "handlebars": "^4.7.9",
+    "on-headers": "1.1.0",
+    "pidusage": "4.0.1",
+    "socket.io": "^4.8.3"
   },
   "optionalDependencies": {
     "event-loop-stats": "1.2.0"

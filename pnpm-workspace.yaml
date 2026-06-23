@@ -1,0 +1,4 @@
+allowBuilds:
+  event-loop-stats: true
+minimumReleaseAgeExclude:
+  - axios@1.18.1

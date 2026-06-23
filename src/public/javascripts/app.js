@@ -15,7 +15,7 @@ Chart.defaults.global.elements.line.borderWidth = 2;
 
 var socket = io(location.protocol + '//' + location.hostname + ':' + (port || location.port), {
     path: socketPath,
-    transports: ["websocket"]
+    transports: ['websocket']
 });
 var defaultSpan = 0;
 var spans = [];
