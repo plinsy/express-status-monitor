@@ -1,9 +1,9 @@
-# express-status-monitor
+# express-monitor
 
-[![express-status-monitor on npm](https://img.shields.io/npm/v/express-status-monitor.svg)](https://www.npmjs.com/express-status-monitor)
-[![npm](https://img.shields.io/npm/dt/express-status-monitor.svg)](https://img.shields.io/npm/dt/express-status-monitor.svg)
-[![CircleCI](https://img.shields.io/circleci/project/github/RafalWilinski/express-status-monitor/master.svg)](https://circleci.com/gh/RafalWilinski/express-status-monitor)
-[![Open Source Helpers](https://www.codetriage.com/rafalwilinski/express-status-monitor/badges/users.svg)](https://www.codetriage.com/rafalwilinski/express-status-monitor)
+[![express-monitor on npm](https://img.shields.io/npm/v/express-monitor.svg)](https://www.npmjs.com/express-monitor)
+[![npm](https://img.shields.io/npm/dt/express-monitor.svg)](https://img.shields.io/npm/dt/express-monitor.svg)
+[![CircleCI](https://img.shields.io/circleci/project/github/RafalWilinski/express-monitor/master.svg)](https://circleci.com/gh/RafalWilinski/express-monitor)
+[![Open Source Helpers](https://www.codetriage.com/rafalwilinski/express-monitor/badges/users.svg)](https://www.codetriage.com/rafalwilinski/express-monitor)
 
 Simple, self-hosted module based on Socket.io and Chart.js to report realtime server metrics for Express-based node servers.
 
@@ -20,9 +20,9 @@ Simple, self-hosted module based on Socket.io and Chart.js to report realtime se
 
 ## Installation & setup
 
-1. Run `npm install express-status-monitor --save`
+1. Run `npm install express-monitor --save`
 2. Before any other middleware or router add following line:
-`app.use(require('express-status-monitor')());`
+`app.use(require('express-monitor')());`
 3. Run server and go to `/status`
 
 Note: This plugin works on Node versions > 4.x
@@ -101,7 +101,7 @@ Example using https://www.npmjs.com/package/connect-ensure-login
 ```javascript
 const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
 
-const statusMonitor = require('express-status-monitor')();
+const statusMonitor = require('express-monitor')();
 app.use(statusMonitor);
 app.get('/status', ensureLoggedIn, statusMonitor.pageRoute)
 ```
@@ -116,7 +116,7 @@ const basic = auth.basic({realm: 'Monitor Area'}, function(user, pass, callback)
 });
 
 // Set '' to config path to avoid middleware serving the html page (path must be a string not equal to the wanted route)
-const statusMonitor = require('express-status-monitor')({ path: '' });
+const statusMonitor = require('express-monitor')({ path: '' });
 app.use(statusMonitor.middleware); // use the "middleware only" property to manage websockets
 app.get('/status', basic.check(statusMonitor.pageRoute)); // use the pageRoute property to serve the dashboard html page
 ```

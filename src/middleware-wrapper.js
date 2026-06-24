@@ -68,11 +68,11 @@ const middlewareWrapper = config => {
    * so that the HTML page can be authenticated while the middleware can be
    * earlier in the request handling chain.  Use like:
    * ```
-   * const statusMonitor = require('express-status-monitor')(config);
+   * const statusMonitor = require('express-monitor')(config);
    * server.use(statusMonitor);
    * server.get('/status', isAuthenticated, statusMonitor.pageRoute);
    * ```
-   * discussion: https://github.com/RafalWilinski/express-status-monitor/issues/63
+   * discussion: https://github.com/RafalWilinski/express-monitor/issues/63
    */
   middleware.middleware = middleware;
   middleware.pageRoute = (req, res) => {

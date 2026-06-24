@@ -1,5 +1,5 @@
 {
-  "name": "express-status-monitor",
+  "name": "express-monitor",
   "version": "1.3.4",
   "description": "Realtime Monitoring for Express-based Node applications",
   "main": "index.js",
@@ -14,17 +14,17 @@
   "engines": {
     "node": ">=8"
   },
-  "author": "Rafal Wilinski <raf.wilinski@gmail.com> (https://dynobase.com)",
+  "author": "AN TSIMANARSON Princy <plinsy2@gmail.com> (https://github.com/plinsy)",
   "contributors": [
     {
-      "name": "AN TSIMANARSON Princy",
-      "email": "plinsy2@gmail.com",
-      "url": "https://github.com/plinsy/"
+      "name": "Rafal Wilinski",
+      "email": "raf.wilinski@gmail.com",
+      "url": "https://dynobase.com"
     },
     {
       "name": "Julien Breux",
       "email": "julien.breux@gmail.com",
-      "url": "https://github.com/JulienBreux/"
+      "url": "https://dynobase.com"
     },
     {
       "name": "Benjamin Dixon",
@@ -64,7 +64,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/RafalWilinski/express-status-monitor.git"
+    "url": "git+https://github.com/plinsy/express-monitor.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -93,5 +93,8 @@
   "funding": {
     "type": "individual",
     "url": "http://dynobase.com/buy"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/plinsy7"
   }
 }
